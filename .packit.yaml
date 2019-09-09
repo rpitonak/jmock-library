@@ -1,10 +1,14 @@
-# we have the specfile in the root of our repository
+# we have the specfile in the fedora dir of our repository
 specfile_path: ./fedora/jmock.spec
 # when doing an update in Fedora, we want to copy the spec file and the config file
 synced_files:
   - ./fedora/jmock.spec
   - .packit.yaml
-# packit is named packitos on PyPI b/c packit name was already taken
 upstream_project_name: jmock-library
-# yes, packit is named packit in Fedora
 downstream_package_name: jmock
+jobs:
+- job: copr_build
+  trigger: pull_request
+  metadata:
+    targets:
+    - fedora-29-x86_64
