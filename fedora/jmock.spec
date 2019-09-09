@@ -2,12 +2,12 @@
 %global namedversion %{version}%{?namedreltag}
 
 Name:          jmock
-Version:       2.8.2
-Release:       6%{?dist}
+Version:       2.12.0.1.gc4366a1e
+Release:       1%{?dist}
 Summary:       Java library for testing code with mock objects
 License:       BSD
 Url:           http://www.jmock.org/
-Source0:       https://github.com/jmock-developers/jmock-library/archive/%{namedversion}.tar.gz
+Source0:       jmock-library-2.12.0.1.gc4366a1e.tar.gz
 
 BuildRequires: maven-local
 BuildRequires: mvn(cglib:cglib)
@@ -131,6 +131,9 @@ rm jmock-legacy/src/test/java/org/jmock/test/acceptance/MockeryFinalizationAccep
 %license LICENSE.txt
 
 %changelog
+* Mon Sep 09 2019 Rado Pitonak <rado.pitonak@gmail.com> - 2.12.0.1.gc4366a1e-1
+- Development snapshot (c4366a1e)
+
 * Fri Jul 13 2018 Fedora Release Engineering <releng@fedoraproject.org> - 2.8.2-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 
