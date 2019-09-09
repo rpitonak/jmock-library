@@ -1,7 +1,7 @@
 Development rules
 =================
 
-Here are some rules that we follow when developing jMock:
+ Here are some rules that we follow when developing jMock:
 
  * Never check in a class without associated unit tests.
 
