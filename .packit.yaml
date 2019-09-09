@@ -1,4 +1,4 @@
-# we have the specfile in the fedora dir of our repository
+# we have the specfile in the fedora directory of our repository
 specfile_path: ./fedora/jmock.spec
 # when doing an update in Fedora, we want to copy the spec file and the config file
 synced_files:
